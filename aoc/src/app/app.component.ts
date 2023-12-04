@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { run } from './days/day1_2';
+import { run } from './days/day3_2';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
