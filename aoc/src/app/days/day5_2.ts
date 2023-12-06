@@ -2,6 +2,7 @@ import {data} from './day5_input';
 import {stringIsSetAndFilled} from "../util/values";
 
 export function run() {
+  const startTs = new Date().getTime();
   function mapSeed(nr: number, step: number) {
     if (step === -1) {
       return nr;
@@ -45,6 +46,7 @@ export function run() {
     if (isInStartRange(source)) {
       console.log('FOUND IT');
       console.log(counter);
+      console.log((new Date().getTime() - startTs) / 1000);
       return;
     }
   }
